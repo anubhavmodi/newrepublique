@@ -74,6 +74,7 @@
 .animation-type{
   opacity: 0;
   padding: 0;
+  max-height: 460px;
 }
 
 .animation-type.animated{
@@ -288,6 +289,7 @@ div.highlightTextOut ul li a:hover:before
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
+    color: white;
 }
 
 .social-icons .icon-box {
@@ -301,7 +303,8 @@ div.highlightTextOut ul li a:hover:before
 }
 
 .social-icons {
-    padding: 30px;
+    padding: 80px;
+    background-color: black;
 }
 
 .icon-box .fa.fa-facebook:hover, .icon-box .fa.fa-linkedin:hover, .icon-box .fa.fa-youtube:hover, .icon-box .fa.fa-instagram:hover{
