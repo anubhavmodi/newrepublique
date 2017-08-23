@@ -223,7 +223,6 @@ div.highlightTextOut ul li a:hover:before
 
 .parent-container {
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 .slick-slider {
@@ -232,6 +231,12 @@ div.highlightTextOut ul li a:hover:before
 
 .slide-image {
 	height:100vh;
+}
+
+.slide-image-container {
+    width: 50%;
+    float: left;
+    position: relative
 }
 
 @media screen and (max-width: 787px) {
@@ -248,4 +253,81 @@ div.highlightTextOut ul li a:hover:before
 		background-color: white;
 		display: none;
 	}
+    .slide-image-container {
+        width: 100%;
+        float: left;
+        position: relative
+    }
+    .menu-bar-mobile {
+        display: block!important;
+        height: 65px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: white;
+    }
+    .menu-item-mobile {
+        display: none;
+        position: fixed;
+        background-color: white;
+        top: 64px;
+        width: 100%;
+        right: 0;
+        border-top: 1px solid #e3e3e3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        z-index: 99999;
+        height: 95vh;
+        opacity: 0.99;
+    }
+}
+
+.social-icons .icon-box .fa {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.social-icons .icon-box {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #3f4046;
+    margin: 0 10px;
+}
+
+.social-icons {
+    padding: 30px;
+}
+
+.icon-box .fa.fa-facebook:hover, .icon-box .fa.fa-linkedin:hover, .icon-box .fa.fa-youtube:hover, .icon-box .fa.fa-instagram:hover{
+  font-size: 28px;
+  color: blue;
+  transition: 1s ease-out;
+  color: green;
+}
+
+.menu-bar-mobile {
+    display: none;
+}
+
+.menu-bar-icon {
+    float: right;
+    margin-top: 18px;
+    margin-right: 12px;
+}
+
+.menu-text {
+    font-size: 18px;
+    margin-right: 12px;
+    position: relative;
+    bottom: 4px;
+}
+
+.display-block {
+    display: block!important;
 }

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$(this).scrollTop(0);
 	window.addEventListener("scroll", scrollContainer);
     scrollContainer();
 	$('.gallery').slick({
@@ -23,6 +24,10 @@ $(document).ready(function(){
 				event.preventDefault();
 				$(this).slickPrev();
 		  }
+	});
+
+	$(".menu-bar-icon").on('click', function(){
+		$(".menu-item-mobile").toggleClass("display-block");
 	});
 });
 
